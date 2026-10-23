@@ -3,25 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio & Practice Site</title>
+  <title>Rishu Kumar Srivastava | Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <div class="badge">Live Project</div>
-    <h1>Welcome to My Space</h1>
-    <p>This site is crafted with clean HTML, CSS, and JavaScript, hosted directly on GitHub Pages from my local D: drive.</p>
-    
-    <div class="counter-box">
-      <span id="click-count">0</span>
-      <small>interactions logged</small>
-    </div>
+  <nav class="navbar">
+    <div class="logo">Rishu.dev</div>
+    <button id="theme-btn" class="icon-btn" title="Toggle Theme">🌓</button>
+  </nav>
 
-    <div class="actions">
-      <button id="counter-btn" class="primary-btn">Click Me!</button>
-      <button id="theme-btn" class="secondary-btn">Toggle Mode</button>
-    </div>
-  </div>
+  <main class="container">
+    <header class="hero">
+      <span class="badge">Open to Opportunities</span>
+      <h1>Crafting Clean Code & Modern Interfaces</h1>
+      <p>Welcome to my practice sandbox. Here I test frontend mechanics, Git pipelines, and live deployments.</p>
+    </header>
+
+    <section class="interactive-panel">
+      <h2>Interactive Sandbox</h2>
+      <div class="counter-card">
+        <p>Live Interaction Counter</p>
+        <div class="count-display" id="click-count">0</div>
+        <div class="btn-group">
+          <button id="increment-btn" class="btn primary-btn">+ Increment</button>
+          <button id="reset-btn" class="btn outline-btn">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2>Featured Works</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>GitHub Practice Site</h3>
+          <p>Static webpage demonstrating Git branch workflows and automated GitHub Pages CI/CD deployment.</p>
+          <span class="tag">HTML / CSS / JS</span>
+        </article>
+        <article class="project-card">
+          <h3>Terminal Automations</h3>
+          <p>CLI commands designed to initialize and manage remote repositories on the D: drive seamlessly.</p>
+          <span class="tag">PowerShell / Git</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Rishu Kumar Srivastava • Hosted on GitHub Pages</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
